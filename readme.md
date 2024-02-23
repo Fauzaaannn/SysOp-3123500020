@@ -54,7 +54,7 @@ Kemudian, sistem operasi akan mengambil alih kendali dan mulai menjalankan progr
 3. Masuk ke dalam aplikasi virtual box dan klik tombol <strong>New</strong>
 ![App Screenshot](img/new-vbox.jpg)
 4. Setelah klik tombol new akan ada tampilan seperti ini,masukkan name untuk virtual machine,dan tentukan folder penyimpanan untuk virtual machine ini,serta masukkan file iso linux debian yang telah di download ,dan klik <strong>Next</strong>
-![App Screenshot](img/add-vbox.jpg)
+![App Screenshot](img/add-vbox.png)
 5. Tentukan RAM dan jumlah CPU yang diinginkan disini input RAM 4096MB atau 4GB dan jumlah CPU 2,jika sudah klik <strong>Next</strong>
 ![App Screenshot](img/ramcpu.jpg)
 6. Tentukan Disk Size,jika sudah klik <strong>Next</strong>
