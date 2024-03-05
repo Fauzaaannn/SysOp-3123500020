@@ -37,7 +37,7 @@ POST akan memeriksa RAM, prosesor, kartu grafis, dan perangkat keras lainnya.
 3 . <strong>Inisialisasi perangkat keras</strong>
 Setelah POST selesai, komputer akan menginisialisasi perangkat keras seperti hard drive, keyboard, mouse, dan perangkat lainnya. 
 Proses ini melibatkan tahap mengenali perangkat keras, memuat driver yang diperlukan, dan menyiapkan perangkat untuk digunakan.
-![App Screenshot](img/inisialisasi-hardware.jpeg)
+![App Screenshot](img/Inisialisasi-hardware.jpeg)
 
 4 . <strong>Membaca sektor boot</strong>
 Selanjutnya, komputer akan mencari sektor boot di hard drive atau perangkat penyimpanan lainnya. 
