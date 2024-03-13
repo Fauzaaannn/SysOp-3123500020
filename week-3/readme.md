@@ -40,7 +40,7 @@ Hasil Run Program Arva Zaki
 Hasil Run Program Rafi Dhiyaulhaq
 
 ![App Screenshot](img/dhiya-flops-1.jpeg)
-<br>
+
 
 - <strong> Run Program 2 </strong>
 Hasil Run Program Fauzan Abderrasheed
@@ -54,7 +54,7 @@ Hasil Run Program Arva Zaki
 Hasil Run Program Rafi Dhiyaulhaq
 
 ![App Screenshot](img/dhiya-flops-2.jpeg)
-<br>
+
 
 - <strong> Run Program 3 </strong>
 Hasil Run Program Fauzan Abderrasheed
@@ -68,7 +68,7 @@ Hasil Run Program Arva Zaki
 Hasil Run Program Rafi Dhiyaulhaq
 
 ![App Screenshot](img/dhiya-flops-3.jpeg)
-<br>
+
 
 - <strong> Run Program 4 </strong>
 Hasil Run Program Fauzan Abderrasheed
@@ -82,7 +82,7 @@ Hasil Run Program Arva Zaki
 Hasil Run Program Rafi Dhiyaulhaq
 
 ![App Screenshot](img/dhiya-flops-4.jpeg)
-<br>
+
 
 - <strong> Run Program 5 </strong>
 Hasil Run Program Fauzan Abderrasheed
@@ -111,7 +111,7 @@ Hasil Run Program Arva Zaki
 Hasil Run Program Rafi Dhiyaulhaq
 
 ![App Screenshot](img/dhiya-iops-1.jpeg)
-<br>
+
 
 - <strong> Run Program 2 </strong>
 Hasil Run Program Fauzan Abderrasheed
@@ -125,7 +125,7 @@ Hasil Run Program Arva Zaki
 Hasil Run Program Rafi Dhiyaulhaq
 
 ![App Screenshot](img/dhiya-iops-2.jpeg)
-<br>
+
 
 - <strong> Run Program 3 </strong>
 Hasil Run Program Fauzan Abderrasheed
@@ -139,7 +139,7 @@ Hasil Run Program Arva Zaki
 Hasil Run Program Rafi Dhiyaulhaq
 
 ![App Screenshot](img/dhiya-iops-3.jpeg)
-<br>
+
 
 - <strong> Run Program 4 </strong>
 Hasil Run Program Fauzan Abderrasheed
@@ -153,7 +153,7 @@ Hasil Run Program Arva Zaki
 Hasil Run Program Rafi Dhiyaulhaq
 
 ![App Screenshot](img/dhiya-iops-4.jpeg)
-<br>
+
 
 - <strong> Run Program 5 </strong>
 Hasil Run Program Fauzan Abderrasheed
