@@ -20,7 +20,7 @@
 2. [Laporan Benchmark](#laporan-benchmark)
 
 ## Presentasi Siklus CPU
-
+<a href="https://www.canva.com/design/DAF_M1bVBIQ/BnkMSw858bEfKjOZEtuOwg/edit?utm_content=DAF_M1bVBIQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Link PPT Siklus CPU</a>
 
 ## Laporan Benchmark
 ### 1. Installing gcc make git
