@@ -28,7 +28,27 @@
 ### 2. Melakukan Clone 
 ![App Screenshot](img/clone.jpeg)
 
-### 3. Run Program FLOPS
+### 3. Compile Program
+![App Screenshot](img/make.png)
+
+![App Screenshot](img/make-clean.png)
+
+![App Screenshot](img/sudo-make-install.png)
+
+### 4. Spesifikasi Virtual Box
+1. Spesifikasi Virtual Box Fauzan Abderrasheed
+![App Screenshot](img/spec-1.png)
+![App Screenshot](img/spec-2.png)
+
+2. Spesifikasi Virtual Box Arva Zaki 
+![App Screenshot](img/spec-arva-1.jpg)
+![App Screenshot](img/spec-arva-2.jpg)
+
+3. Virtual Box Rafi Dhiyaulhaq
+![App Screenshot](img/spec-dhiya-1.jpg)
+![App Screenshot](img/spec-dhiya-2.jpg)
+
+### 5. Run Program FLOPS
 - <strong> Run Program 1 </strong>
 
 Hasil Run Program Fauzan Abderrasheed
@@ -104,7 +124,7 @@ Hasil Run Program Rafi Dhiyaulhaq
 ![App Screenshot](img/dhiya-flops-5.jpeg)
 
 
-### 4. Run Program IOPS
+### 6. Run Program IOPS
 - <strong> Run Program 1 </strong>
 
 Hasil Run Program Fauzan Abderrasheed
@@ -180,7 +200,7 @@ Hasil Run Program Rafi Dhiyaulhaq
 ![App Screenshot](img/dhiya-iops-5.jpeg)
 
 
-### 5. Perbandingan Hasil 
+### 7. Perbandingan Hasil 
 <table>
 <thead>
 <tr>
@@ -220,12 +240,12 @@ Hasil Run Program Rafi Dhiyaulhaq
 </tbody>
 </table>
 
-### 6. Analisa
+### 8. Analisa
 Program yang dijalankan merupakan program benchmark untuk mengukur FLOPS (Floating-point Operations Per Second) dan IOPS (Integer Operations per Second) pada CPU. Program dijalankan lima kali, masing-masing dengan jumlah inti CPU yang berbeda: 3, 2, dan 2. Hasilnya menunjukkan bahwa CPU memiliki peringkat FLOPS IOPS yang lebih tinggi ketika lebih banyak inti yang digunakan.
 
 Secara keseluruhan, program benchmark menunjukkan bahwa peringkat FLOPS IOPS CPU meningkat seiring dengan meningkatnya jumlah inti CPU yang digunakan. Hal ini karena program ini mampu mendistribusikan beban kerja ke beberapa inti, sehingga memungkinkannya melakukan lebih banyak operasi secara bersamaan.
 
-### 7. Kesimpulan 
+### 9. Kesimpulan 
 FLOPS mengukur jumlah operasi floating-point yang dapat dilakukan oleh unit pemrosesan pusat (CPU) dalam satu detik. Operasi floating-point adalah perhitungan yang melibatkan angka dengan titik desimal.
 IOPS mengukur jumlah operasi bilangan bulat yang dapat dilakukan CPU dalam satu detik. Operasi bilangan bulat adalah perhitungan yang melibatkan bilangan bulat.
 
