@@ -37,15 +37,21 @@
 
 ### 4. Spesifikasi Virtual Box
 1. Spesifikasi Virtual Box Fauzan Abderrasheed
+
 ![App Screenshot](img/spec-1.png)
+
 ![App Screenshot](img/spec-2.png)
 
 2. Spesifikasi Virtual Box Arva Zaki 
+
 ![App Screenshot](img/spec-arva-1.jpg)
+
 ![App Screenshot](img/spec-arva-2.jpg)
 
 3. Virtual Box Rafi Dhiyaulhaq
+
 ![App Screenshot](img/spec-dhiya-1.jpg)
+
 ![App Screenshot](img/spec-dhiya-2.jpg)
 
 ### 5. Run Program FLOPS
