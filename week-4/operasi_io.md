@@ -371,8 +371,7 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
 
    Analisa 
 
-   Pembelokan standart input dan standart output dapat dikombinasikan tetapi tidak boleh menggunakan nama file yang sama sebagai standart input dan output
-
+   cat < output > out digunakan untuk membaca input dari file output dan menuliskannya kembali ke file baru bernama out. perintah cat out digunakan untuk menampilkan isi file out ke layar,perintah cat < out >> out digunakan untuk menimpa isi file out dengan isi dari dirinya sendiri. 
 ## Percobaan 4 : Filter
 1. Pipa juga digunakan untuk mengkombinasikan utilitas sistem untuk membentuk fungsi yang lebih kompleks
    ```
@@ -401,6 +400,10 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
    Hasil Output
    
    ![App Screenshot](img/percobaan4_1.png)
+
+   Analisa 
+
+   memberikan input dari keyboard untuk kelas1.txt dan kelas2.txt menggunakan operator 1>,lalu menggabungkan kedua file serta mengurutkan isi dari file tersebut sesuai abjad menggunakan perintah sort.
 
 ## LATIHAN:
 
@@ -516,7 +519,16 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
 
 ## KESIMPULAN
 
-
+   - Redirection mengacu pada teknik untuk mengalihkan aliran input dan output dari suatu program. Dengan redirection, Anda dapat mengalihkan output dari sebuah perintah agar disimpan dalam file atau menggunakan output tersebut sebagai masukan untuk perintah lainnya.
+   - Pipeline adalah mekanisme yang memungkinkan output dari satu perintah (program) digunakan sebagai input untuk perintah lainnya secara langsung, tanpa perlu menyimpan output ke dalam file terlebih dahulu.
+   - ``echo``  digunakan untuk mencetak atau menampilkan teks atau variabel ke terminal atau ke output standar.
+   - ``cat`` digunakan untuk mencantumkan, menggabungkan, dan menulis konten atau isi file dalam output standar
+   - ``more`` untuk Melihat isi suatzu file dengan fasilitas melihat isi file dari atas dan untuk kebawah menggunakan tombol Enter untuk perbaris dan tombol Spasi untuk perlayar
+   - ``sort`` Digunakan untuk mengurutkan masukannya berdasarkan urutan nomor ASCII dari karakter.
+   - ``grep`` Digunakan untuk menyaring masukannya dan menampilkan baris-baris yang hanya mengandung pola yang ditentukan. Pola ini disebut regular expression.
+   - ``wc`` Digunakan untuk menghitung jumlah baris, kata dan karakter dari baris-baris masukan yang diberikan kepadanya.
+   - ``cut`` Digunakan untuk mengambil kolom tertentu dari baris-baris masukannya, yang ditentukan pada option –c.
+   - ``uniq`` Digunakan untuk menghilangkan baris-baris berurutan yang mengalami duplikasi, biasanya digabungkan dalam pipeline dengan ``sort``.
 
 ## LAPORAN RESMI:
 
