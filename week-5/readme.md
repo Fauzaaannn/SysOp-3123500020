@@ -43,7 +43,7 @@ primes.
 
 1. Pindah ke command line terminal (tty2) dengan menekan Ctrl+Alt+F2 
 dan login ke terminal sebagai user
-<br>
+
 2. Instruksi `ps`
 ![App Screenshot](img/ps.png)
 
