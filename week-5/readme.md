@@ -48,3 +48,34 @@ dan login ke terminal sebagai user
 
     ![App Screenshot](img/ps.png)
 
+    Analisa : 
+    Instruksi `ps` digunakan untuk melihat kondisi proses yang ada 
+
+3. Instruksi `ps -u`
+
+    ![App Screenshot](img/ps-u.png)
+
+    Analisa : 
+    Instruksi `ps -u` (user), digunakan untuk melihat elemen/faktor lain dari kondisi proses yang ada serta menampilkan nama user
+
+4. Instruksi `ps -u <user>`
+
+    ![App Screenshot](img/ps-u-user.png)
+
+    Analisa :
+    Mencari proses yang spesifik pemakai. Proses diatas hanya terbatas pada proses milik pemakai. Perintah tersebut digunakan untuk menampilkan proses pada user yang kita inginkan.
+
+5. Instruksi `ps -a`
+
+    ![App Screenshot](img/ps-a.png)
+
+    Analisa :
+    Perintah tersebut digunakan untuk menampilkan daftar dari semua proses yang sedang berjalan
+
+6. Instruksi `ps -au`
+
+    ![App Screenshot](img/ps-au.png)
+
+    Analisa :
+    Perintah ps -au digunakan untuk menampilkan informasi yang lebih rinci tentang semua proses yang sedang berjalan, termasuk proses yang dimiliki oleh pengguna (termasuk proses terminal yang sedang dijalankan) dan proses sistem.
+
