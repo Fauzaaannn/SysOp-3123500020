@@ -45,5 +45,6 @@ primes.
 dan login ke terminal sebagai user
 
 2. Instruksi `ps`
+
 ![App Screenshot](img/ps.png)
 
