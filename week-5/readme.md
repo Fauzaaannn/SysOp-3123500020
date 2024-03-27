@@ -145,7 +145,14 @@ Jawablah pertanyaan-pertanyaan di bawah ini :
 ## Percobaan
 1. Login sebagai user.
 2. Download program C++ untuk menampilkan bilangan prima yang bernama
-primes.
+primes
+
+    ![App Screenshot](img/installc++.png)
+    ![App Screenshot](img/primes.png)
+
+    Analisa : 
+    Program di atas menampilkan bilangan prima sampai ke N. Ketika dijalankan, program meminta input N dari pengguna dan menampilkan bilangan prima sampai mencapai bilangan N.
+
 3. Lakukan percobaan-percobaan di bawah ini kemudian analisa hasil percobaan.
 4. Selesaikan soal-soal latihan.
 
