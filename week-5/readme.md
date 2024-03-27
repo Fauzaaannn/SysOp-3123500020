@@ -17,6 +17,82 @@
 
 <h1 style="text-align: center;font-weight: bold">Proses dan Manajemen Proses</h1>
 
+### POKOK BAHASAN
+
+- Proses pada Sistem Operasi Linux
+- Manajemen Proses pada Sistem Operasi Linux
+
+### TUJUAN BELAJAR
+
+Setelah mempelajari materi dalam bab ini, mahasiswa diharapkan mampu:
+
+- Memahami konsep proses pada sis tem operasi Linux.
+- Menampilkan beberapa cara menampilkan hubungan proses parent dan child.
+- Menampilkan status proses dengan beberapa format berbeda.
+- Melakukan pengontrolan proses pada shell.
+- Memahami penjadwalan prioritas.
+
+### DASAR TEORI
+
+#### 1. KONSEP PROSES PADA SISTEM OPERASI LINUX
+
+Proses adalah program yang sedang dieksekusi. Setiap kali menggunakan utilitas sistem atau program aplikasi dari shell, satu atau lebih proses ”child” akan dibuat oleh shell sesuai perintah yang diberikan. Setiap kali instruksi dibe rikan pada Linux shell, maka kernel akan menciptakan sebuah proses-id. Proses ini disebut juga dengan terminology Unix sebagai sebuah Job. Proses Id (PID) dimulai dari 0, yaitu proses INIT, kemudian diikuti oleh proses berikutnya (terdaftar pada /etc/inittab).
+Beberapa tipe proses :
+
+- Foreground </br>
+  Proses yang diciptakan oleh pemakai langsung pada terminal (interaktif, dialog)
+- Batch </br>
+  Proses yang dikumpulkan dan dijalankan secara sekuensial (satu persatu). Prose Batch tidak diasosiasikan (berinteraksi) dengan terminal.
+- Daemon </br>
+  Proses yang menunggu permintaan (request) dari proses lainnya dan menjalankan tugas sesuai dengan permintaan tersebut. Bila tidak ada request, maka program ini akan berada dalam kondisi “idle” dan tidak menggunakan waktu hitung CPU. Umumnya nama proses daemon di UNIX berakhiran d, misalnya inetd, named, popd dll
+
+#### 2. SINYAL
+
+Proses dapat mengirim dan menerima sinyal dari dan ke proses lainnya. Proses mengirim sinyal melalui instruksi “kill” dengan format </br>
+
+    kill [-nomor sinyal] PID
+
+Nomor sinyal : 1 s/d maksimum nomor sinyal yang didefinisikan system Standar nomor sinyal yang terpenting adalah :
+
+| No Sinyal | Nama    | Deskripsi                                                                             |
+| --------- | ------- | ------------------------------------------------------------------------------------- |
+| 1         | SIGHUP  | Hangup, sinyal dikirim bila proses terputus, misalnya melalui putusnya hubungan modem |
+| 2         | SIGINT  | Sinyal interrupt, melalui ^C                                                          |
+| 3         | SIGQUIT | Sinyal Quit, melalui ^\|                                                              |
+| 9         | SIGKILL | Sinyal Kill, menghentikan proses                                                      |
+| 15        | SIGTERM | Sinyal terminasi software                                                             |
+
+#### 3. MENGIRIM SINYAL
+
+Mengirim sinyal adalah satu alat komunikasi antar proses, yaitu memberitahukan proses yang sedang berjalan bahwa ada sesuatu yang harus dikendalikan. Berdasarkan sinyal yang dikirim ini maka proses dapat bereaksi dan administrator/programmer dapat menentukan reaksi tersebut. Mengirim sinyal menggunakan instruksi
+
+    kill [-nomor sinyal] PID
+
+Sebelum mengirim sinyal PID proses yang akan dikirim harus diketahui terlebih dahulu.
+
+#### 4. MENGONTROL PROSES PADA SHELL
+
+Shell menyediakan fasilitas job control yang memungkinkan mengontrol beberapa job atau proses yang sedang berjalan pada waktu yang sama. Misalnya bila melakukan pengeditan file teks dan ingin melakukan interrupt pengeditan untuk mengerjakan hal lainnya. Bila selesai, dapat kembali (switch) ke editor dan melakukan pengeditan file teks kembali.</br>
+Job bekerja pada <strong>foreground</strong> atau <strong>background</strong>. Pada foreground hanya diper untukkan untuk satu job pada satu waktu. Job pada foreground akan mengontrol shell - menerima input dari keyboard dan mengirim output ke layar. Job pada background tidak menerima input dari terminal, biasanya berjalan tanpa memerlukan interaksi</br>
+Job pada foreground kemungkinan dihentikan sementara (suspend), dengan menekan [Ctrl-Z]. Job yang dihentikan sementara dapat dijalankan kembali pada foreground atau background sesuai keperluan dengan menekan <strong>”fg”</strong> atau <strong>”bg”</strong>. Sebagai catatan, menghentikan job seme ntara sangat berbeda dengan melakuakan interrupt job (biasanya menggunakan [Ctrl-C]), dimana job yang diinterrup akan dimatikan secara permanen dan tidak dapat dijalankan lagi.
+
+#### 5. MENGONTROL PROSES LAIN
+
+Perintah ps dapat digunakan untuk menunjukkan semua proses yang sedang berjalan pada mesin (bukan hanya proses pada shell saat ini) dengan format :
+
+    ps –fae atau
+    ps -aux
+
+Beberapa versi UNIX mempunyai utilitas sistem yang disebut top yang menyediakan cara interaktif untuk memonitor aktifitas sistem. Statistik secara detail dengan proses yang berjalan ditampilkan dan secara terus-menerus di-refresh . Proses ditampilkan secara terurut dari utilitas CPU. Kunci yang berguna pada top adalah
+
+    s – set update frequency
+    u – display proses dari satu user
+    k – kill proses (dengan PID)
+    q – quit
+
+Utilitas untuk melakukan pengontrolan proses dapat ditemukan pada sistem UNIX adalah perintah killall. Perintah ini akan menghentikan proses sesuai PID atau job number proses.
+
+
 ## Daftar isi
 1. [Jawaban Tugas Pendahuluan](#tugas-pendahuluan)
 2. [Laporan Hasil Percobaan](#percobaan)
@@ -24,13 +100,47 @@
 ## Tugas Pendahuluan
 Jawablah pertanyaan-pertanyaan di bawah ini :
 1. Apa yang dimaksud dengan proses ?
+
+    - Proses adalah Program yang sedang diekseskusi
+
 2. Apa yang dimaksud perintah untuk menampilkan status proses :
     `ps`, `pstree`.
+
+    - Perintah `ps` dalam sistem operasi Linux digunakan untuk menampilkan informasi tentang proses-proses yang sedang berjalan di sistem.
+    - Sama halnya dengan perintah `ps`, `pstree` juga mempunyai fungsi yang sama untuk melihat status proses yang berjalan pada sistem. Tetapi informasinya ditampilkan dalam bentuk pohon secara hirarkis yang menunjukkan hubungan antara proses-proses tersebut. 
+
 3. Sebutkan opsi yang dapat diberikan pada perintah ps
+
+    - `$ps` untuk melihat kondisi proses yang ada
+
+    - `$ps -u` untuk melihat faktor/element lainnya
+
+    - `$ps -u <user>` mencari proses yang spesifik pemakai
+
+    - `$ps -a` mencari proses lainnya (all)
+
+    - `$ps -au` mencari proses lainnya (all user)
+
+    - `$ps -eH` untuk semua proses, H untuk hirarki tampilan proses
+
+    - `$ps -e f` menampilkan status proses dengan karakter grafis
+
 4. Apa yang dimaksud dengan sinyal ? Apa perintah untuk mengirim sinyal ?
+
+    - Sinyal adalah cara yang digunakan oleh sistem operasi untuk mengirim pesan ke proses. Signal ini bisa digunakan untuk berbagai hal, seperti memberhentikan proses, memberi tahu proses untuk memuat kembali konfigurasi, dan lain-lain.
+
+    -  Proses mengirim sinyal melalui instruksi `kill` dengan format `kill [-nomor sinyal] PID`.
+
 5. Apa yang dimaksud dengan proses foreground dan background pada job control ?
+
+    - Pada foreground hanya diperuntukkan untuk satu job pada satu waktu. Job pada foreground akan mengontrol shell - menerima input dari keyboard dan mengirim output ke layar. Job pada background tidak menerima input dari terminal, biasanya berjalan tanpa memerlukan interaksi.
+
 6. Apa yang dimaksud perintah-perintah penjadwalan prioritas :
     `top`, `nice`, `renice`
+
+    - `top`: Memonitor / memantau aktivitas system secara real-time 
+    - `nice`: Mengubah prioritas eksekusi proses yang sudah berjalan
+    - `renice`: mengurangi prioritas pada proses.
 
 ## Percobaan
 1. Login sebagai user.
