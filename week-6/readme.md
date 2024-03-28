@@ -35,57 +35,55 @@
     ![App Screenshot](img/fg.png)
 
     Analisa : 
-     
+    Perintah `fg` disini digunakan untuk me-restart job pada *foreground*.
 
 3. Instruksi `bg`
 
     ![App Screenshot](img/bg.png)
 
     Analisa : 
+    Setelah instruksi `fg`, Shell akan menampilkan nama perintah yang diletakkan di *foreground*. Stop job lagi dengan *Ctrl + Z*. Kemudian gunakan perintah `bg` untuk meletakkan job pada *background*. 
      
     Instruksi `fg`
 
     ![App Screenshot](img/fg-2.png)
 
     Analisa : 
-     
+    Job tidak bisa dihentikan dengan *Ctrl + Z* karena job berada pada *background*. Untuk menghentikannya, letakkan job pada *foreground* dengan `fg` dan kemudian hentikan sementara dengan *Ctrl + Z*.
 
 4. Instruksi `yes &`
 
     ![App Screenshot](img/yes-&.png)
 
     Analisa : 
-     
+    Job pada *background* dapat digunakan untuk menampilkan teks pada terminal, dimana dapat diabaikan jika mencoba mengerjakan job lain seperti perintah di atas. Untuk menghentikannya tidak dapat menggunakan *Ctrl + C*. Job harus dipindah ke *foreground* baru diberhentikan dengan cara tekan `fg` dan tekan enter, Kemudian lanjutkan dengan *Ctrl + Z* untuk menghentikan sementara
 
 5. Instruksi `fg %2`, `bg %2` atau `%2`
 
     ![App Screenshot](img/fg-bg-2.png)
 
     Analisa : 
-     
+    Perintah di atas digumakan apabila ingin menjalankan banyak job dalam satu waktu, letakkan job pada *foreground* atau *background* dengan memberikan job ID. 
 
 6. Instruksi `fg`
 
     ![App Screenshot](img/fg-3.png)
 
     Analisa : 
-     
+    tekan `fg` dan tekan *Enter*, kemudian dilanjutkan dengan *Ctrl-Z* untuk menghentikan sementara
 
 7. Instruksi `ps -fae`
 
     ![App Screenshot](img/ps-fae.png)
-
-    Analisa : 
-     
-
-8. Instruksi `kill -9 <Nomor PID>`
 
     ![App Screenshot](img/kill-9-PID.png)
 
     ![App Screenshot](img/killed-9-PID.png)
 
     Analisa : 
-     
+    Lihat job dengan perintah `ps -fae` dan tekan Enter. Kemudian hentikan proses dengan perintah kill. Pada proses di atas proses yang dihentikan adalah proses dengan PID 6142, yaitu proses `yes > /dev/null`
+
+8. Logout dan tekan Alt+F7 untuk kembali ke mode grafis
 
 
      
